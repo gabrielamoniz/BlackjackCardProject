@@ -2,7 +2,7 @@ package ca.sheridancollege.project;
 
 public class BJCard extends Card {
     
-    public enum Suit {HEARTS, DEMONDS, SPADES, CLUBS} 
+    public enum Suit {HEARTS, DIAMONDS, SPADES, CLUBS} 
     public enum Rank {ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING}
     
     private Rank rank;
@@ -42,7 +42,7 @@ public class BJCard extends Card {
     
     @Override
     public String toString() {
-        return "Blackjack cards";
+        return"Blackjack cards";
     }
 	
     
