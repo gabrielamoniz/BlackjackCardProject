@@ -6,15 +6,15 @@ public class PlayBJGame extends Game {
    
     public PlayBJGame(String name) {
         super(name);
-        
+    }     
     @Override
     public void play() {
         System.out.println("Welcome to play Blackjack Card Game!");
        
         
-        BJGame has a deckOfCards of 52 cards
+        //BJGame has a deckOfCards of 52 cards
        GroupOfCards deckOfCards = new GroupOfCards(52); //4 suits x 13 values = 52 cards
-        int i=0;
+       int i=0;
        for( BJCard.Suit suits : BJCard.Suit.values() ) //suits - spade 
         {
            for(BJCard.Rank ranks: BJCard.Rank.values()) //ranks  1
@@ -28,7 +28,6 @@ public class PlayBJGame extends Game {
 //            System.out.println(c.getSuit()+ " " + c.getRank());
 //        }
         deckOfCards.shuffle();
-        
         //generate two random cards for player and dear
         
         // Only 1 dealer
@@ -47,5 +46,4 @@ public class PlayBJGame extends Game {
     public void declareWinner() {
         System.out.print("To be overriden..");
     }
-    
 }
